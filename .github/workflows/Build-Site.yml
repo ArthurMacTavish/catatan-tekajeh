@@ -9,15 +9,18 @@ on:
 jobs:
   Build-Site:
     runs-on: ubuntu-latest
+
     steps:
     - run: echo "🧔‍♂️ / I'm Russell Brooks, We got you. The VuePress Page is been processed, right Moonshine?"
     
     - run: echo "🐺 / You're right Russell. Checking out the Update"
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - run: echo "🧙‍♂️ / I'm Wheatley Stevenson, I installs Node.JS and Yarn"
     - name: Install Node.JS
-      uses: actions/setup_node@4
+      uses: actions/setup-node@v4
       with:
         node-version: 18
 
