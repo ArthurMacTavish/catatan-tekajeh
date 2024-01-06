@@ -1,0 +1,16 @@
+{
+  "name": "catatan-tekajeh",
+  "version": "1.0.0",
+  "description": "Catatan Khusus TKJ (AIJ/TLJ/WAN/ASJ)",
+  "main": "index.js",
+  "repository": "https://github.com/ArthurMacTavish/catatan-tekajeh",
+  "author": "Arthur MacTavish",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-rc.0"
+  },
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  }
+}

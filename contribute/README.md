@@ -1,0 +1,1 @@
+# Kontribusi demi masa depan yang lebih baik
