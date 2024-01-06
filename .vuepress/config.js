@@ -1,7 +1,6 @@
 import { defaultTheme } from '@vuepress/theme-default'
 
 module.exports = {
-    base: 'https://tkj.reubenhu.my.id/',
     title: 'Catatan TKJ',
     description: 'Catatan Khusus TKJ (AIJ/TLJ/WAN/ASJ)',
 
