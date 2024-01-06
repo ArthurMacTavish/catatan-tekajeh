@@ -11,15 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: echo "🧔‍♂️ / I'm Russell Brooks, We got you. The VuePress Page is been processed, right Moonshine?"
-    
-    - run: echo "🐺 / You're right Russell. Checking out the Update"
-    - uses: actions/checkout@v4
+
+    - name: Fetch Update Situs
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
-    - run: echo "🧙‍♂️ / I'm Wheatley Stevenson, I installs Node.JS and Yarn"
-    - name: Install Node.JS
+    - name: Install Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 18
@@ -27,17 +25,13 @@ jobs:
     - name: Install Yarn
       run: npm install -g yarn
 
-    - name: Initialize Vuepress V2
+    - name: Menginisialisasi Vuepress V2
       run: yarn add -D vuepress@next
-
-    - run: echo "👨‍💻 / I'm Arthur MacTavish, let's build the site!"
     
-    - name: Building the Site...
+    - name: Membangun Situs
       run: yarn build
 
-    - run: echo "💀 / Deploy it! I'm Nitrous Ghostberg btw."
-
-    - name: Deploy to GitHub Pages
+    - name: Mendistribusikan Situs ke GitHub Pages
       uses: crazy-max/ghaction-github-pages@v4
       with:
         target_branch: live-site
