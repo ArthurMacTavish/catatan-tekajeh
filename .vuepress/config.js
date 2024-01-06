@@ -1,4 +1,5 @@
 import { defaultTheme } from '@vuepress/theme-default'
+import { gitPlugin } from '@vuepress/plugin-git'
 
 module.exports = {
     title: 'Catatan TKJ',
@@ -11,6 +12,8 @@ module.exports = {
     theme: defaultTheme({
         repo: 'https://github.com/ArthurMacTavish/catatan-tekajeh',
         repoLabel: "Kode Sumber (GitHub)",
+        contributors: false,
+        lastUpdatedText: "Terakhir kali di Perbaharui",
         editLink: false,
         logo: '/hero.png',
         navbar: [
