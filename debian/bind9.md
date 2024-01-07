@@ -14,9 +14,9 @@ Ya ini drama yang berkepanjangan, Thanks to some generious people on the interne
 3. Jalankan tiga perintah ini
 
 ```bash
-root@ruben:/etc/bind# **mkdir zones** # Membuat folder **zones**
-root@ruben:/etc/bind# cp db.local **zones/forward.db** # Copy file forward ke folder **zones**
-root@ruben:/etc/bind# cp db.127 **zones/rev.db** # Copy file reverse ke folder **zones
+root@ruben:/etc/bind$ mkdir zones # Membuat folder **zones**
+root@ruben:/etc/bind$ cp db.local zones/forward.db # Copy file forward ke folder **zones**
+root@ruben:/etc/bind$ cp db.127 zones/rev.db # Copy file reverse ke folder **zones
 
 # Alasan kita membuat folder khusus agar makin rapi aja hehe.**
 ```
