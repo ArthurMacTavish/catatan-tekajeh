@@ -1,6 +1,6 @@
-# Solusi Drama Wordpress
+# Instalasi Wordpress
 
-# Prerequisites
+## Prerequisites
 
 1. User MariaDB dengan izin full. Cek di [Instalasi MariaDB](/assets/mariadb.html) untuk mengetahui caranya.
 2. Buat Database dengan nama `wordpressdb`
@@ -18,7 +18,7 @@
 
 3. `wget` dan `unzip` (Jalankan `apt install wget unzip`)
 
-## Let’s get started!
+## Instalasi Wordpress
 
 1. Ubah folder terminal ke `cd /var/www/html` (`html` diganti dengan Folder Situs Anda)
 2. Download Wordpress dengan perintah `wget https://wordpress.org/latest.zip`
