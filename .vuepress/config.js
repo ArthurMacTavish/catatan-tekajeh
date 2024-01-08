@@ -39,7 +39,14 @@ module.exports = {
                     children: [],
                 },
                 '/debian/dhcp.html',
-                '/debian/bind9.html'
+                '/debian/bind9.html',
+                {
+                    text: "Instalasi MariaDB + phpMyAdmin",
+                    collapsible: false,
+                    link: '/debian/mariadb.html',
+                    children: ['/debian/mariadb.html', '/debian/phpmyadmin.html'],
+                },
+                '/debian/wordpress.html',
             ],
         },
     }),
