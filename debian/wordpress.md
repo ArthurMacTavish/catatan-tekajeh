@@ -2,12 +2,12 @@
 
 ## Prerequisites
 
-1. User MariaDB dengan izin full. Cek di [Instalasi MariaDB](/assets/mariadb.html) untuk mengetahui caranya.
+1. User MariaDB dengan izin full. Cek di [Instalasi MariaDB](/debian/mariadb.html) untuk mengetahui caranya.
 2. Buat Database dengan nama `wordpressdb`
     
     Asumsi anda menggunakan PHPMyAdmin, klik Databases dan tambahkan database dengan nama `wordpressdb`
     
-    ![Recording 2023-11-18 132848.gif](/assets/wordpress/001_wordpress.gif)
+    ![Recording 2023-11-18 132848.gif](/assets/debian/wordpress/001_wordpress.gif)
     
     Atau kalo masih pakai Terminal ketik dua perintah berikut:
     
@@ -23,15 +23,15 @@
 1. Ubah folder terminal ke `cd /var/www/html` (`html` diganti dengan Folder Situs Anda)
 2. Download Wordpress dengan perintah `wget https://wordpress.org/latest.zip`
     
-    ![Recording 2023-11-18 1343032.gif](/assets/wordpress/002_wordpress.gif)
+    ![Recording 2023-11-18 1343032.gif](/assets/debian/wordpress/002_wordpress.gif)
     
     Udahan downloadnya, lanjut!
     
 3. Unzip filenya dengan `unzip latest.zip`
     
-    ![Recording 2023-11-18 161603.gif](/assets/wordpress/003_wordpress.gif)
+    ![Recording 2023-11-18 161603.gif](/assets/debian/wordpress/003_wordpress.gif)
     
 4. (Opsional, alias boleh di skip) Hapus file Wordpress zip nya dengan `rm latest.zip`
 5. Buka situs anda dengan URL `[IP atau Domain Server anda]/wordpress`
     
-    ![Untitled](/assets/wordpress/004_wordpress.png)
+    ![Untitled](/assets/debian/wordpress/004_wordpress.png)
