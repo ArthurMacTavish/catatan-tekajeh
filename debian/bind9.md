@@ -82,7 +82,7 @@ root@ruben:/etc/bind$ cp db.127 zones/rev.db # Copy file reverse ke folder **zon
     1       IN      PTR     ruben.net.
     ```
     
-3. Saatnya kita bikin dua-dua file ini useful, buka file `nano /etc/bind/named.conf.local` dan ketik berikut:
+3. Saatnya kita bikin dua-dua file ini useful, buka file `nano /etc/bind/named.conf.default-zones` dan ketik berikut:
     
     ```bash
     zone "ruben.net" { # Ganti Domain nya dengan domain kamu!
@@ -96,7 +96,7 @@ root@ruben:/etc/bind$ cp db.127 zones/rev.db # Copy file reverse ke folder **zon
     };
     ```
     
-    ::: tip 🤔 si `named.conf.default-zones` kok nganggur?
+    ::: tip 🤔 si `named.conf.local` kok nganggur?
     
     Ternyata `named.conf.default-zones` tidak boleh sama dengan `named.conf.local`
     Stupid Mistakes.
