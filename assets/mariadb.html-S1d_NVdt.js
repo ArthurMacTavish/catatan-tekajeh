@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-436128e6","path":"/debian/mariadb.html","title":"Instalasi MariaDB","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1704673854000},"filePathRelative":"debian/mariadb.md"}');export{a as data};

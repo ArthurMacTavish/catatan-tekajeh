@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-rc.0">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/hero.png"><title>Instalasi MariaDB | Catatan TKJ</title><meta name="description" content="Catatan Khusus TKJ (AIJ/TLJ/WAN/ASJ)">
+    <link rel="preload" href="/assets/style-pBmjJHNx.css" as="style"><link rel="stylesheet" href="/assets/style-pBmjJHNx.css">
+    <link rel="modulepreload" href="/assets/app-DzH5ulrQ.js"><link rel="modulepreload" href="/assets/mariadb.html-S1d_NVdt.js"><link rel="modulepreload" href="/assets/mariadb.html-vViBZ8WS.js">
+    <link rel="prefetch" href="/assets/index.html-2SGJXjv9.js" as="script"><link rel="prefetch" href="/assets/downloads.html-BiRlVV9g.js" as="script"><link rel="prefetch" href="/assets/index.html-6gi6D9Ms.js" as="script"><link rel="prefetch" href="/assets/index.html-CH-4GJbI.js" as="script"><link rel="prefetch" href="/assets/bind9.html-iA2le6-l.js" as="script"><link rel="prefetch" href="/assets/dhcp.html-UFvdAkyH.js" as="script"><link rel="prefetch" href="/assets/mailserver.html-Tx8HqnzQ.js" as="script"><link rel="prefetch" href="/assets/phpmyadmin.html-81X0Hc_N.js" as="script"><link rel="prefetch" href="/assets/wordpress.html-kZmUHLRS.js" as="script"><link rel="prefetch" href="/assets/404.html-6Yl8cQE3.js" as="script"><link rel="prefetch" href="/assets/index.html-LFcKU1RD.js" as="script"><link rel="prefetch" href="/assets/downloads.html-Tr3t8HGJ.js" as="script"><link rel="prefetch" href="/assets/index.html-DyU9pgK4.js" as="script"><link rel="prefetch" href="/assets/index.html-oiKpis4R.js" as="script"><link rel="prefetch" href="/assets/bind9.html-UADIvmWo.js" as="script"><link rel="prefetch" href="/assets/dhcp.html-4PFkXi10.js" as="script"><link rel="prefetch" href="/assets/mailserver.html-79RaKUeN.js" as="script"><link rel="prefetch" href="/assets/phpmyadmin.html-U1PqSa65.js" as="script"><link rel="prefetch" href="/assets/wordpress.html-RaEkP0Re.js" as="script"><link rel="prefetch" href="/assets/404.html-EtGepQQ4.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/" class=""><img class="logo" src="/hero.png" alt="Catatan TKJ"><span class="site-name can-hide">Catatan TKJ</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/" class="" aria-label="Halaman Depan"><!--[--><!--]--> Halaman Depan <!--[--><!--]--></a></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Topik"><span class="title">Topik</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Topik"><span class="title">Topik</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/debian" class="router-link-active" aria-label="Debian"><!--[--><!--]--> Debian <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/mikrotik" class="" aria-label="MikroTik"><!--[--><!--]--> MikroTik <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><a href="/downloads.html" class="" aria-label="Link Unduhan"><!--[--><!--]--> Link Unduhan <!--[--><!--]--></a></div><div class="navbar-item"><a href="/contribute" class="" aria-label="Kontribusi"><!--[--><!--]--> Kontribusi <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/ArthurMacTavish/catatan-tekajeh" rel="noopener noreferrer" target="_blank" aria-label="Kode Sumber (GitHub)"><!--[--><!--]--> Kode Sumber (GitHub) <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/" class="" aria-label="Halaman Depan"><!--[--><!--]--> Halaman Depan <!--[--><!--]--></a></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Topik"><span class="title">Topik</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Topik"><span class="title">Topik</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/debian" class="router-link-active" aria-label="Debian"><!--[--><!--]--> Debian <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/mikrotik" class="" aria-label="MikroTik"><!--[--><!--]--> MikroTik <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><a href="/downloads.html" class="" aria-label="Link Unduhan"><!--[--><!--]--> Link Unduhan <!--[--><!--]--></a></div><div class="navbar-item"><a href="/contribute" class="" aria-label="Kontribusi"><!--[--><!--]--> Kontribusi <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/ArthurMacTavish/catatan-tekajeh" rel="noopener noreferrer" target="_blank" aria-label="Kode Sumber (GitHub)"><!--[--><!--]--> Kode Sumber (GitHub) <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><a href="/debian" class="router-link-active sidebar-item sidebar-heading" aria-label="Sebelum Mulai, Ya Doa Dulu"><!--[--><!--]--> Sebelum Mulai, Ya Doa Dulu <!--[--><!--]--></a><!----></li><li><a href="/debian/dhcp.html" class="sidebar-item sidebar-heading" aria-label="Instalasi DHCP Server"><!--[--><!--]--> Instalasi DHCP Server <!--[--><!--]--></a><!----></li><li><a href="/debian/bind9.html" class="sidebar-item sidebar-heading" aria-label="Instalasi BIND9 DNS Server."><!--[--><!--]--> Instalasi BIND9 DNS Server. <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/debian/mariadb.html" class="router-link-active router-link-exact-active router-link-active sidebar-item sidebar-heading active" aria-label="Instalasi MariaDB"><!--[--><!--]--> Instalasi MariaDB <!--[--><!--]--></a><!----></li><li><a href="/debian/phpmyadmin.html" class="sidebar-item sidebar-heading" aria-label="Instalasi phpMyAdmin"><!--[--><!--]--> Instalasi phpMyAdmin <!--[--><!--]--></a><!----></li><li><a href="/debian/wordpress.html" class="sidebar-item sidebar-heading" aria-label="Instalasi Wordpress"><!--[--><!--]--> Instalasi Wordpress <!--[--><!--]--></a><!----></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="instalasi-mariadb" tabindex="-1"><a class="header-anchor" href="#instalasi-mariadb" aria-hidden="true">#</a> Instalasi MariaDB</h1><ol><li><p>Install dulu MariaDB Server <code>apt install mariadb-server</code></p></li><li><p>Jika sudah terinstall, gunakan perintah <code>mysql_secure_installation</code>. Lalu perhatikan baik-baik, letter to letter!</p><ul><li><p>Ketika prompt ini muncul, ketik Password Root anda.</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
+      SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
+
+In order to log into MariaDB to secure it, we&#39;ll need the current
+password for the root user. If you&#39;ve just installed MariaDB, and
+haven&#39;t set the root password yet, you should just press enter here.
+
+Enter current password for root (enter for none):
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>Pada Prompt ini, ketik <code>n</code> karena kita telah menggunakan password root.</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>OK, successfully used password, moving on...
+
+Setting the root password or using the unix_socket ensures that nobody
+can log into the MariaDB root user without the proper authorisation.
+
+You already have your root account protected, so you can safely answer &#39;n&#39;.
+
+Switch to unix_socket authentication [Y/n] n
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>Ini jawab <code>n</code> ada, toh udah ada root password juga</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>You already have your root account protected, so you can safely answer &#39;n&#39;.
+
+Change the root password? [Y/n] n
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>Kita hapus saja Anonymous User, karena… well… kita nggak pakai</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>By default, a MariaDB installation has an anonymous user, allowing anyone
+to log into MariaDB without having to have a user account created for
+them.  This is intended only for testing, and to make the installation
+go a bit smoother.  You should remove them before moving into a
+production environment.
+
+Remove anonymous users? [Y/n] y
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>Untuk Remote Root Access, kita disallow aja</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>Normally, root should only be allowed to connect from &#39;localhost&#39;.  This
+ensures that someone cannot guess at the root password from the network.
+
+Disallow root login remotely? [Y/n] y
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>Untuk Test Database, kita hapus saja, selama database ini hanya digunakan untuk testing.</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>By default, MariaDB comes with a database named &#39;test&#39; that anyone can
+access.  This is also intended only for testing, and should be removed
+before moving into a production environment.
+
+Remove test database and access to it? [Y/n] y
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>Untuk Reload Privilage Table, yes we want that!</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>Reloading the privilege tables will ensure that all changes made so far
+will take effect immediately.
+
+Reload privilege tables now? [Y/n] y
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Kalo udahan, dan disambut dengan kata ini, you’re done! 🎉</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>Cleaning up...
+
+All done!  If you&#39;ve completed all of the above steps, your MariaDB
+installation should now be secure.
+
+Thanks for using MariaDB!
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li></ul></li><li><p>Udahan kita dengan “Sub-bab” diatas, phew! Akses MariaDB dengan ketik <code>mysql</code> dan boleh test dengan <code>show databases;</code></p><div class="custom-container tip"><p class="custom-container-title">💡 Protip!</p><p>Jangan lupa <code>show databases;</code> nya pakai semicolon <code>;</code></p></div><p>Seharusnya munculnya kurang lebih begini:</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>MariaDB [(none)]&gt; show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.000 sec)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>Buat User untuk MariaDB (Penting untuk <a href="/debian/phpmyadmin.html" class="">phpMyAdmin</a>) <code>CREATE USER &#39;USERNAME&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;PASSWORD&#39;;</code></p><p>Seperti ini contohnya (User: ruben, Password: admin):</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>MariaDB [(none)]&gt; CREATE USER &#39;ruben&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;admin&#39;;
+Query OK, 0 rows affected (0.003 sec)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>Buat Permission untuk User anda, agar anda mengubah isi MariaDB, baik dari MariaDB CLI atau <a href="/debian/phpmyadmin.html" class="">phpMyAdmin</a> Dengan command berikut <code>GRANT ALL ON *.* TO &#39;USERNAME&#39;@&#39;localhost&#39;;</code></p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>MariaDB [(none)]&gt; GRANT ALL ON *.* TO &#39;ruben&#39;@&#39;localhost&#39;;
+Query OK, 0 rows affected (0.002 sec)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>Kalo udah selesai, keluarnya pakai <code>quit</code></p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>MariaDB [(none)]&gt; quit
+Bye
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li></ol></div><!--[--><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Terakhir kali di Perbaharui: </span><!----></div><!----></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/debian/bind9.html" class="" aria-label="Instalasi BIND9 DNS Server."><!--[--><!--]--> Instalasi BIND9 DNS Server. <!--[--><!--]--></a></span><span class="next"><a href="/debian/phpmyadmin.html" class="" aria-label="Instalasi phpMyAdmin"><!--[--><!--]--> Instalasi phpMyAdmin <!--[--><!--]--></a></span></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/assets/app-DzH5ulrQ.js" defer></script>
+  </body>
+</html>

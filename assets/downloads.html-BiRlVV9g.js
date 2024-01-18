@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-dc9ec3f2","path":"/downloads.html","title":"","lang":"en-US","frontmatter":{"sidebar":false},"headers":[{"level":2,"title":"Link Unduhan","slug":"link-unduhan","link":"#link-unduhan","children":[]}],"git":{"updatedTime":1704550700000},"filePathRelative":"downloads.md"}');export{e as data};

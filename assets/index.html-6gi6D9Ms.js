@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7c87f26e","path":"/contribute/","title":"Kontribusi demi masa depan yang lebih baik","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1704550700000},"filePathRelative":"contribute/README.md"}');export{e as data};
