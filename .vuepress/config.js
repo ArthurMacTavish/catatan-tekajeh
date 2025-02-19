@@ -1,7 +1,10 @@
+import { viteBundler } from '@vuepress/bundler-vite'
 import { defaultTheme } from '@vuepress/theme-default'
-import { gitPlugin } from '@vuepress/plugin-git'
+import { defineUserConfig } from 'vuepress'
 
-module.exports = {
+export default defineUserConfig({
+    bundler: viteBundler(),
+
     title: 'Catatan TKJ',
     description: 'Catatan Khusus TKJ (AIJ/TLJ/WAN/ASJ)',
 
@@ -46,4 +49,4 @@ module.exports = {
             ],
         },
     }),
-}
+})

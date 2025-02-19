@@ -3,7 +3,7 @@ name: Deploy Situs
 on:
   push:
     branches: [main]
-  
+
   workflow_dispatch:
 
 jobs:
@@ -11,32 +11,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Fetch Update Situs
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Fetch Update Situs
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
-    - name: Install Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: 18
+      - name: Install Yarn
+        run: npm install -g yarn
 
-    - name: Install Yarn
-      run: npm install -g yarn
+      - name: Menginisialisasi Vuepress V2
+        run: yarn add -D vuepress@next @vuepress/bundler-vite@next @vuepress/theme-default@next
 
-    - name: Menginisialisasi Vuepress V2
-      run: yarn add -D vuepress@next
-    
-    - name: Membangun Situs
-      run: yarn build
+      - name: Membangun Situs
+        run: yarn build
 
-    - name: Mendistribusikan Situs ke GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v4
-      with:
-        target_branch: live-site
-        build_dir: .vuepress/dist
-        fqdn: tkj.reubenhu.my.id
-      env:
-        # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Mendistribusikan Situs ke GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: live-site
+          build_dir: .vuepress/dist
+          fqdn: tkj.reubenhu.my.id
+        env:
+          # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
